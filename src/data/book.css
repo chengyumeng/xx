@@ -1,15 +1,13 @@
 /**
  * 那一年我二十三岁，活在自己的黄金时代，爱上了发着光的她。
  */
-* {
-  -webkit-transition: all 1s;
-}
 
 #style-text {
   position: absolute;
   font-size: smaller;
   -webkit-transform-origin: left;
-  max-height: 80.5%;
+  height: 80%;
+  overflow: hidden;
 }
 
 /**
@@ -22,6 +20,17 @@ pre, a {
   /* 如这不断变得优雅的代码，我们经历了从朴素到华丽再到"一切都是刚刚好"。*/
 }
 
+pre:not(:empty) {
+  /*max-height: 66.6%;*/
+  width: 30%;
+  overflow: auto;
+  font-family: monospace;
+  padding: 10px 10px 20px;
+  box-shadow: -4px 4px 2px 0 rgba(0, 0, 0, 0);
+  white-space: pre-wrap;
+  outline: 0;
+}
+
 /**
  * 如果嫁给一个程序员有什么快乐的话，被动接受代码的黑魔法，算是吧。
  * 在过去的这些年里，我教她写过很多代码。
@@ -29,27 +38,12 @@ pre, a {
  * "你会就可以了，我需要的时候你来帮我做。"
  * 这就是"爱情"的模样。
  */
-pre:not(:empty) {
-  max-height: 66.6%;
-  width: 30%;
-  overflow: hidden;
-  font-family: monospace;
-  padding: 10px 10px 20px;
-  box-shadow: -4px 4px 2px 0 rgba(0, 0, 0, 0);
-  white-space: pre-wrap;
-  outline: 0;
-
-}
 
 /**
- * 有人住高楼，
- * 有人在深沟，
- * 有人光万丈，
- * 有人一身锈，
- * 世人万千种，
- * 浮云莫去求，
- * 斯人若彩虹，
- * 遇上方知有。
+ * 有人住高楼，有人在深沟，
+ * 有人光万丈，有人一身锈，
+ * 世人万千种，浮云莫去求，
+ * 斯人若彩虹，遇上方知有。
  */
 .comment { color: #86B;}
 .selector { color: #E69F0F; }

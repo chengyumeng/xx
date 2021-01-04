@@ -44,19 +44,16 @@ export class AppComponent {
     setInterval(() => {
       this.timeElapse(together);
     }, 600);
-
-    const styleSection1$ = from(love)
-      .pipe(
-        concatMap(char => of(char).pipe(delay(50))),
-        tap(char => this.currentStyle += char || ' ')
-      );
-
-    // this.currentStyle = love;
-
-    concat(styleSection1$,).subscribe();
   }
 
   ngAfterViewInit(): void {
+    const styleSection1$ = from(love)
+      .pipe(
+        concatMap(char => of(char).pipe(delay(40))),
+        tap(char => this.currentStyle += char || ' ')
+      );
+
+    concat(styleSection1$,).subscribe();
   }
 
   timeElapse(c): void {

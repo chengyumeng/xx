@@ -92,3 +92,15 @@ $shadow: ();
   }
 }
 
+pre {
+  overflow: auto;
+  max-height: 90%;
+  width: 100%;
+  border-radius: 1px; /* Prevents bad clipping in Chrome */
+}
+
+.content {
+  position: absolute;
+  top: 0; right: 0; left: 0; bottom: 20px;
+}
+

@@ -6,18 +6,18 @@ export default class anniversary {
 export const anniversaries: anniversary[] = [
   {
     date: new Date(2016,11,16),
-    desc: '',
+    desc: '今天是我们的恋爱纪念日',
   },
   {
     date: new Date(2017,2,14),
-    desc: '',
+    desc: '宝贝儿，情人节快乐',
   },
   {
     date: new Date(1995,8,24),
-    desc: '',
+    desc: '宝贝儿，生日快乐',
   },
   {
     date: new Date(1994,11,28),
-    desc: '',
+    desc: '宝贝儿，生日快乐',
   },
 ];

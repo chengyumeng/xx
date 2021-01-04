@@ -2824,12 +2824,11 @@ class AppComponent {
         setInterval(() => {
             this.timeElapse(together);
         }, 600);
-        const styleSection1$ = Object(rxjs__WEBPACK_IMPORTED_MODULE_1__["from"])(_data_book_css__WEBPACK_IMPORTED_MODULE_3__["default"])
-            .pipe(Object(rxjs_operators__WEBPACK_IMPORTED_MODULE_2__["concatMap"])(char => Object(rxjs__WEBPACK_IMPORTED_MODULE_1__["of"])(char).pipe(Object(rxjs_operators__WEBPACK_IMPORTED_MODULE_2__["delay"])(50))), Object(rxjs_operators__WEBPACK_IMPORTED_MODULE_2__["tap"])(char => this.currentStyle += char || ' '));
-        // this.currentStyle = love;
-        Object(rxjs__WEBPACK_IMPORTED_MODULE_1__["concat"])(styleSection1$).subscribe();
     }
     ngAfterViewInit() {
+        const styleSection1$ = Object(rxjs__WEBPACK_IMPORTED_MODULE_1__["from"])(_data_book_css__WEBPACK_IMPORTED_MODULE_3__["default"])
+            .pipe(Object(rxjs_operators__WEBPACK_IMPORTED_MODULE_2__["concatMap"])(char => Object(rxjs__WEBPACK_IMPORTED_MODULE_1__["of"])(char).pipe(Object(rxjs_operators__WEBPACK_IMPORTED_MODULE_2__["delay"])(40))), Object(rxjs_operators__WEBPACK_IMPORTED_MODULE_2__["tap"])(char => this.currentStyle += char || ' '));
+        Object(rxjs__WEBPACK_IMPORTED_MODULE_1__["concat"])(styleSection1$).subscribe();
     }
     timeElapse(c) {
         let e = Date();
@@ -2947,7 +2946,7 @@ AppModule.ɵinj = _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵdefineInjector
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
-/* harmony default export */ __webpack_exports__["default"] = ("/**\n * 那一年我二十三岁，活在自己的黄金时代，爱上了发着光的她。\n */\n* {\n  -webkit-transition: all 1s;\n}\n#style-text {\n  position: absolute;\n  font-size: smaller;\n  -webkit-transform-origin: left;\n  max-height: 80.5%;\n}\n/**\n * 多年以后，面对枕边的她，\n * 我都会回想起 2014 年国庆节后那个周末里我们的邂逅，\n * 那该是神的祝福。\n */\npre, a {\n  color: blue;\n  /* 如这不断变得优雅的代码，我们经历了从朴素到华丽再到\"一切都是刚刚好\"。*/\n}\n/**\n * 如果嫁给一个程序员有什么快乐的话，被动接受代码的黑魔法，算是吧。\n * 在过去的这些年里，我教她写过很多代码。\n * 不过呢，可能她一个也没学会。\n * \"你会就可以了，我需要的时候你来帮我做。\"\n * 这就是\"爱情\"的模样。\n */\npre:not(:empty) {\n  max-height: 66.6%;\n  width: 30%;\n  overflow: hidden;\n  font-family: monospace;\n  padding: 10px 10px 20px;\n  box-shadow: -4px 4px 2px 0 rgba(0, 0, 0, 0);\n  white-space: pre-wrap;\n  outline: 0;\n\n}\n/**\n * 有人住高楼，\n * 有人在深沟，\n * 有人光万丈，\n * 有人一身锈，\n * 世人万千种，\n * 浮云莫去求，\n * 斯人若彩虹，\n * 遇上方知有。\n */\n.comment { color: #86B;}\n.selector { color: #E69F0F; }\n.selector .property { color: #64D5EA; }\n.property { color: #64D5EA; }\n.punctuation { color: #BE84F2; }\npre:not(#style-text) {\n  -webkit-transform: rotateY(10deg);\n  -webkit-transform-origin: left;\n}\n/**\n * 爱一个人之前，爱惜自己每一片技能的羽毛。\n * 爱上一个人后，但求平安顺遂，一生相伴。\n * 愿你身边那人，永远是我。\n */\n\n/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbImJvb2suY3NzIl0sIm5hbWVzIjpbXSwibWFwcGluZ3MiOiJBQUFBOztFQUVFO0FBQ0Y7RUFDRSwwQkFBMEI7QUFDNUI7QUFFQTtFQUNFLGtCQUFrQjtFQUNsQixrQkFBa0I7RUFDbEIsOEJBQThCO0VBQzlCLGlCQUFpQjtBQUNuQjtBQUVBOzs7O0VBSUU7QUFDRjtFQUNFLFdBQVc7RUFDWCx1Q0FBdUM7QUFDekM7QUFFQTs7Ozs7O0VBTUU7QUFDRjtFQUNFLGlCQUFpQjtFQUNqQixVQUFVO0VBQ1YsZ0JBQWdCO0VBQ2hCLHNCQUFzQjtFQUN0Qix1QkFBdUI7RUFDdkIsMkNBQTJDO0VBQzNDLHFCQUFxQjtFQUNyQixVQUFVOztBQUVaO0FBRUE7Ozs7Ozs7OztFQVNFO0FBQ0YsV0FBVyxXQUFXLENBQUM7QUFDdkIsWUFBWSxjQUFjLEVBQUU7QUFDNUIsc0JBQXNCLGNBQWMsRUFBRTtBQUN0QyxZQUFZLGNBQWMsRUFBRTtBQUM1QixlQUFlLGNBQWMsRUFBRTtBQUUvQjtFQUNFLGlDQUFpQztFQUNqQyw4QkFBOEI7QUFDaEM7QUFFQTs7OztFQUlFIiwiZmlsZSI6ImJvb2suY3NzIiwic291cmNlc0NvbnRlbnQiOlsiLyoqXG4gKiDpgqPkuIDlubTmiJHkuozljYHkuInlsoHvvIzmtLvlnKjoh6rlt7HnmoTpu4Tph5Hml7bku6PvvIzniLHkuIrkuoblj5HnnYDlhYnnmoTlpbnjgIJcbiAqL1xuKiB7XG4gIC13ZWJraXQtdHJhbnNpdGlvbjogYWxsIDFzO1xufVxuXG4jc3R5bGUtdGV4dCB7XG4gIHBvc2l0aW9uOiBhYnNvbHV0ZTtcbiAgZm9udC1zaXplOiBzbWFsbGVyO1xuICAtd2Via2l0LXRyYW5zZm9ybS1vcmlnaW46IGxlZnQ7XG4gIG1heC1oZWlnaHQ6IDgwLjUlO1xufVxuXG4vKipcbiAqIOWkmuW5tOS7peWQju+8jOmdouWvueaelei+ueeahOWlue+8jFxuICog5oiR6YO95Lya5Zue5oOz6LW3IDIwMTQg5bm05Zu95bqG6IqC5ZCO6YKj5Liq5ZGo5pyr6YeM5oiR5Lus55qE6YKC6YCF77yMXG4gKiDpgqPor6XmmK/npZ7nmoTnpZ3npo/jgIJcbiAqL1xucHJlLCBhIHtcbiAgY29sb3I6IGJsdWU7XG4gIC8qIOWmgui/meS4jeaWreWPmOW+l+S8mOmbheeahOS7o+egge+8jOaIkeS7rOe7j+WOhuS6huS7juactOe0oOWIsOWNjuS4veWGjeWIsFwi5LiA5YiH6YO95piv5Yia5Yia5aW9XCLjgIIqL1xufVxuXG4vKipcbiAqIOWmguaenOWrgee7meS4gOS4queoi+W6j+WRmOacieS7gOS5iOW/q+S5kOeahOivne+8jOiiq+WKqOaOpeWPl+S7o+eggeeahOm7kemtlOazle+8jOeul+aYr+WQp+OAglxuICog5Zyo6L+H5Y6755qE6L+Z5Lqb5bm06YeM77yM5oiR5pWZ5aW55YaZ6L+H5b6I5aSa5Luj56CB44CCXG4gKiDkuI3ov4flkaLvvIzlj6/og73lpbnkuIDkuKrkuZ/msqHlrabkvJrjgIJcbiAqIFwi5L2g5Lya5bCx5Y+v5Lul5LqG77yM5oiR6ZyA6KaB55qE5pe25YCZ5L2g5p2l5biu5oiR5YGa44CCXCJcbiAqIOi/meWwseaYr1wi54ix5oOFXCLnmoTmqKHmoLfjgIJcbiAqL1xucHJlOm5vdCg6ZW1wdHkpIHtcbiAgbWF4LWhlaWdodDogNjYuNiU7XG4gIHdpZHRoOiAzMCU7XG4gIG92ZXJmbG93OiBoaWRkZW47XG4gIGZvbnQtZmFtaWx5OiBtb25vc3BhY2U7XG4gIHBhZGRpbmc6IDEwcHggMTBweCAyMHB4O1xuICBib3gtc2hhZG93OiAtNHB4IDRweCAycHggMCByZ2JhKDAsIDAsIDAsIDApO1xuICB3aGl0ZS1zcGFjZTogcHJlLXdyYXA7XG4gIG91dGxpbmU6IDA7XG5cbn1cblxuLyoqXG4gKiDmnInkurrkvY/pq5jmpbzvvIxcbiAqIOacieS6uuWcqOa3seayn++8jFxuICog5pyJ5Lq65YWJ5LiH5LiI77yMXG4gKiDmnInkurrkuIDouqvplIjvvIxcbiAqIOS4luS6uuS4h+WNg+enje+8jFxuICog5rWu5LqR6I6r5Y675rGC77yMXG4gKiDmlq/kurroi6XlvanombnvvIxcbiAqIOmBh+S4iuaWueefpeacieOAglxuICovXG4uY29tbWVudCB7IGNvbG9yOiAjODZCO31cbi5zZWxlY3RvciB7IGNvbG9yOiAjRTY5RjBGOyB9XG4uc2VsZWN0b3IgLnByb3BlcnR5IHsgY29sb3I6ICM2NEQ1RUE7IH1cbi5wcm9wZXJ0eSB7IGNvbG9yOiAjNjRENUVBOyB9XG4ucHVuY3R1YXRpb24geyBjb2xvcjogI0JFODRGMjsgfVxuXG5wcmU6bm90KCNzdHlsZS10ZXh0KSB7XG4gIC13ZWJraXQtdHJhbnNmb3JtOiByb3RhdGVZKDEwZGVnKTtcbiAgLXdlYmtpdC10cmFuc2Zvcm0tb3JpZ2luOiBsZWZ0O1xufVxuXG4vKipcbiAqIOeIseS4gOS4quS6uuS5i+WJje+8jOeIseaDnOiHquW3seavj+S4gOeJh+aKgOiDveeahOe+veavm+OAglxuICog54ix5LiK5LiA5Liq5Lq65ZCO77yM5L2G5rGC5bmz5a6J6aG66YGC77yM5LiA55Sf55u45Ly044CCXG4gKiDmhL/kvaDouqvovrnpgqPkurrvvIzmsLjov5zmmK/miJHjgIJcbiAqL1xuIl19 */");
+/* harmony default export */ __webpack_exports__["default"] = ("/**\n * 那一年我二十三岁，活在自己的黄金时代，爱上了发着光的她。\n */\n\n#style-text {\n  position: absolute;\n  font-size: smaller;\n  -webkit-transform-origin: left;\n  height: 80%;\n  overflow: hidden;\n}\n\n/**\n * 多年以后，面对枕边的她，\n * 我都会回想起 2014 年国庆节后那个周末里我们的邂逅，\n * 那该是神的祝福。\n */\n\npre, a {\n  color: blue;\n  /* 如这不断变得优雅的代码，我们经历了从朴素到华丽再到\"一切都是刚刚好\"。*/\n}\n\npre:not(:empty) {\n  /*max-height: 66.6%;*/\n  width: 30%;\n  overflow: auto;\n  font-family: monospace;\n  padding: 10px 10px 20px;\n  box-shadow: -4px 4px 2px 0 rgba(0, 0, 0, 0);\n  white-space: pre-wrap;\n  outline: 0;\n}\n\n/**\n * 如果嫁给一个程序员有什么快乐的话，被动接受代码的黑魔法，算是吧。\n * 在过去的这些年里，我教她写过很多代码。\n * 不过呢，可能她一个也没学会。\n * \"你会就可以了，我需要的时候你来帮我做。\"\n * 这就是\"爱情\"的模样。\n */\n\n/**\n * 有人住高楼，有人在深沟，\n * 有人光万丈，有人一身锈，\n * 世人万千种，浮云莫去求，\n * 斯人若彩虹，遇上方知有。\n */\n\n.comment { color: #86B;}\n\n.selector { color: #E69F0F; }\n\n.selector .property { color: #64D5EA; }\n\n.property { color: #64D5EA; }\n\n.punctuation { color: #BE84F2; }\n\npre:not(#style-text) {\n  -webkit-transform: rotateY(10deg);\n  -webkit-transform-origin: left;\n}\n\n/**\n * 爱一个人之前，爱惜自己每一片技能的羽毛。\n * 爱上一个人后，但求平安顺遂，一生相伴。\n * 愿你身边那人，永远是我。\n */\n\n/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbImJvb2suY3NzIl0sIm5hbWVzIjpbXSwibWFwcGluZ3MiOiJBQUFBOztFQUVFOztBQUVGO0VBQ0Usa0JBQWtCO0VBQ2xCLGtCQUFrQjtFQUNsQiw4QkFBOEI7RUFDOUIsV0FBVztFQUNYLGdCQUFnQjtBQUNsQjs7QUFFQTs7OztFQUlFOztBQUNGO0VBQ0UsV0FBVztFQUNYLHVDQUF1QztBQUN6Qzs7QUFFQTtFQUNFLHFCQUFxQjtFQUNyQixVQUFVO0VBQ1YsY0FBYztFQUNkLHNCQUFzQjtFQUN0Qix1QkFBdUI7RUFDdkIsMkNBQTJDO0VBQzNDLHFCQUFxQjtFQUNyQixVQUFVO0FBQ1o7O0FBRUE7Ozs7OztFQU1FOztBQUVGOzs7OztFQUtFOztBQUNGLFdBQVcsV0FBVyxDQUFDOztBQUN2QixZQUFZLGNBQWMsRUFBRTs7QUFDNUIsc0JBQXNCLGNBQWMsRUFBRTs7QUFDdEMsWUFBWSxjQUFjLEVBQUU7O0FBQzVCLGVBQWUsY0FBYyxFQUFFOztBQUUvQjtFQUNFLGlDQUFpQztFQUNqQyw4QkFBOEI7QUFDaEM7O0FBRUE7Ozs7RUFJRSIsImZpbGUiOiJib29rLmNzcyIsInNvdXJjZXNDb250ZW50IjpbIi8qKlxuICog6YKj5LiA5bm05oiR5LqM5Y2B5LiJ5bKB77yM5rS75Zyo6Ieq5bex55qE6buE6YeR5pe25Luj77yM54ix5LiK5LqG5Y+R552A5YWJ55qE5aW544CCXG4gKi9cblxuI3N0eWxlLXRleHQge1xuICBwb3NpdGlvbjogYWJzb2x1dGU7XG4gIGZvbnQtc2l6ZTogc21hbGxlcjtcbiAgLXdlYmtpdC10cmFuc2Zvcm0tb3JpZ2luOiBsZWZ0O1xuICBoZWlnaHQ6IDgwJTtcbiAgb3ZlcmZsb3c6IGhpZGRlbjtcbn1cblxuLyoqXG4gKiDlpJrlubTku6XlkI7vvIzpnaLlr7nmnpXovrnnmoTlpbnvvIxcbiAqIOaIkemDveS8muWbnuaDs+i1tyAyMDE0IOW5tOWbveW6huiKguWQjumCo+S4quWRqOacq+mHjOaIkeS7rOeahOmCgumAhe+8jFxuICog6YKj6K+l5piv56We55qE56Wd56aP44CCXG4gKi9cbnByZSwgYSB7XG4gIGNvbG9yOiBibHVlO1xuICAvKiDlpoLov5nkuI3mlq3lj5jlvpfkvJjpm4XnmoTku6PnoIHvvIzmiJHku6znu4/ljobkuobku47mnLTntKDliLDljY7kuL3lho3liLBcIuS4gOWIh+mDveaYr+WImuWImuWlvVwi44CCKi9cbn1cblxucHJlOm5vdCg6ZW1wdHkpIHtcbiAgLyptYXgtaGVpZ2h0OiA2Ni42JTsqL1xuICB3aWR0aDogMzAlO1xuICBvdmVyZmxvdzogYXV0bztcbiAgZm9udC1mYW1pbHk6IG1vbm9zcGFjZTtcbiAgcGFkZGluZzogMTBweCAxMHB4IDIwcHg7XG4gIGJveC1zaGFkb3c6IC00cHggNHB4IDJweCAwIHJnYmEoMCwgMCwgMCwgMCk7XG4gIHdoaXRlLXNwYWNlOiBwcmUtd3JhcDtcbiAgb3V0bGluZTogMDtcbn1cblxuLyoqXG4gKiDlpoLmnpzlq4Hnu5nkuIDkuKrnqIvluo/lkZjmnInku4DkuYjlv6vkuZDnmoTor53vvIzooqvliqjmjqXlj5fku6PnoIHnmoTpu5HprZTms5XvvIznrpfmmK/lkKfjgIJcbiAqIOWcqOi/h+WOu+eahOi/meS6m+W5tOmHjO+8jOaIkeaVmeWlueWGmei/h+W+iOWkmuS7o+eggeOAglxuICog5LiN6L+H5ZGi77yM5Y+v6IO95aW55LiA5Liq5Lmf5rKh5a2m5Lya44CCXG4gKiBcIuS9oOS8muWwseWPr+S7peS6hu+8jOaIkemcgOimgeeahOaXtuWAmeS9oOadpeW4ruaIkeWBmuOAglwiXG4gKiDov5nlsLHmmK9cIueIseaDhVwi55qE5qih5qC344CCXG4gKi9cblxuLyoqXG4gKiDmnInkurrkvY/pq5jmpbzvvIzmnInkurrlnKjmt7Hmsp/vvIxcbiAqIOacieS6uuWFieS4h+S4iO+8jOacieS6uuS4gOi6q+mUiO+8jFxuICog5LiW5Lq65LiH5Y2D56eN77yM5rWu5LqR6I6r5Y675rGC77yMXG4gKiDmlq/kurroi6XlvanombnvvIzpgYfkuIrmlrnnn6XmnInjgIJcbiAqL1xuLmNvbW1lbnQgeyBjb2xvcjogIzg2Qjt9XG4uc2VsZWN0b3IgeyBjb2xvcjogI0U2OUYwRjsgfVxuLnNlbGVjdG9yIC5wcm9wZXJ0eSB7IGNvbG9yOiAjNjRENUVBOyB9XG4ucHJvcGVydHkgeyBjb2xvcjogIzY0RDVFQTsgfVxuLnB1bmN0dWF0aW9uIHsgY29sb3I6ICNCRTg0RjI7IH1cblxucHJlOm5vdCgjc3R5bGUtdGV4dCkge1xuICAtd2Via2l0LXRyYW5zZm9ybTogcm90YXRlWSgxMGRlZyk7XG4gIC13ZWJraXQtdHJhbnNmb3JtLW9yaWdpbjogbGVmdDtcbn1cblxuLyoqXG4gKiDniLHkuIDkuKrkurrkuYvliY3vvIzniLHmg5zoh6rlt7Hmr4/kuIDniYfmioDog73nmoTnvr3mr5vjgIJcbiAqIOeIseS4iuS4gOS4quS6uuWQju+8jOS9huaxguW5s+WuiemhuumBgu+8jOS4gOeUn+ebuOS8tOOAglxuICog5oS/5L2g6Lqr6L656YKj5Lq677yM5rC46L+c5piv5oiR44CCXG4gKi9cbiJdfQ== */");
 
 /***/ }),
 
@@ -2969,6 +2968,7 @@ __webpack_require__.r(__webpack_exports__);
 
 
 
+const _c0 = ["scrollMe"];
 class CodeComponent {
     constructor(domSanitizer) {
         this.domSanitizer = domSanitizer;
@@ -2982,18 +2982,22 @@ class CodeComponent {
     ngOnInit() {
         setInterval(() => {
             if (this.currentcode !== this.code) {
-                const stylePre = document.getElementById('style-text');
-                stylePre.scrollTop = stylePre.scrollHeight + 2000;
+                this.myScrollContainer.nativeElement.scrollTop = this.myScrollContainer.nativeElement.scrollHeight;
                 this.currentcode = this.code;
             }
         }, 600);
     }
 }
 CodeComponent.ɵfac = function CodeComponent_Factory(t) { return new (t || CodeComponent)(_angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdirectiveInject"](_angular_platform_browser__WEBPACK_IMPORTED_MODULE_2__["DomSanitizer"])); };
-CodeComponent.ɵcmp = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdefineComponent"]({ type: CodeComponent, selectors: [["app-code"]], inputs: { code: "code" }, decls: 3, vars: 2, consts: [[1, "code", 3, "innerHTML"], [1, "content"], ["id", "style-text", 3, "innerHTML"]], template: function CodeComponent_Template(rf, ctx) { if (rf & 1) {
+CodeComponent.ɵcmp = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdefineComponent"]({ type: CodeComponent, selectors: [["app-code"]], viewQuery: function CodeComponent_Query(rf, ctx) { if (rf & 1) {
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵviewQuery"](_c0, true);
+    } if (rf & 2) {
+        let _t;
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵqueryRefresh"](_t = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵloadQuery"]()) && (ctx.myScrollContainer = _t.first);
+    } }, inputs: { code: "code" }, decls: 4, vars: 2, consts: [[1, "code", 3, "innerHTML"], [1, "content"], ["id", "style-text", 3, "innerHTML"], ["scrollMe", ""]], template: function CodeComponent_Template(rf, ctx) { if (rf & 1) {
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelement"](0, "div", 0);
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](1, "div", 1);
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelement"](2, "pre", 2);
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelement"](2, "pre", 2, 3);
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
     } if (rf & 2) {
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵproperty"]("innerHTML", ctx.codeInStyleTag, _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵsanitizeHtml"]);
@@ -3009,6 +3013,9 @@ CodeComponent.ɵcmp = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdefineComp
             }]
     }], function () { return [{ type: _angular_platform_browser__WEBPACK_IMPORTED_MODULE_2__["DomSanitizer"] }]; }, { code: [{
             type: _angular_core__WEBPACK_IMPORTED_MODULE_0__["Input"]
+        }], myScrollContainer: [{
+            type: _angular_core__WEBPACK_IMPORTED_MODULE_0__["ViewChild"],
+            args: ['scrollMe']
         }] }); })();
 
 
@@ -3093,19 +3100,19 @@ class anniversary {
 const anniversaries = [
     {
         date: new Date(2016, 11, 16),
-        desc: '',
+        desc: '今天是我们的恋爱纪念日',
     },
     {
         date: new Date(2017, 2, 14),
-        desc: '',
+        desc: '宝贝儿，情人节快乐',
     },
     {
         date: new Date(1995, 8, 24),
-        desc: '',
+        desc: '宝贝儿，生日快乐',
     },
     {
         date: new Date(1994, 11, 28),
-        desc: '',
+        desc: '宝贝儿，生日快乐',
     },
 ];
 

@@ -1,4 +1,4 @@
-import { Component, OnInit, Input } from '@angular/core';
+import { Component, OnInit, Input, ElementRef, ViewChild } from '@angular/core';
 import Prism from 'prismjs';
 import { DomSanitizer, SafeHtml } from '@angular/platform-browser';
 
@@ -10,6 +10,8 @@ import { DomSanitizer, SafeHtml } from '@angular/platform-browser';
 export class CodeComponent implements OnInit {
   @Input() code: string;
   currentcode: string;
+
+  @ViewChild('scrollMe') private myScrollContainer: ElementRef;
 
   get codeInStyleTag(): SafeHtml {
     return this.domSanitizer.bypassSecurityTrustHtml(`<style>${this.code}</style>`);
@@ -24,8 +26,8 @@ export class CodeComponent implements OnInit {
   ngOnInit() {
     setInterval(() => {
       if (this.currentcode !== this.code) {
-        const stylePre = document.getElementById('style-text');
-        stylePre.scrollTop = stylePre.scrollHeight + 2000;
+        this.myScrollContainer.nativeElement.scrollTop = this.myScrollContainer.nativeElement.scrollHeight;
+
         this.currentcode = this.code;
       }
     }, 600);
