@@ -1,1 +1,94 @@
 /* You can add global styles to this file, and also import other style files */
+
+@font-face {
+  font-family: digit;
+  src: url('~assets/digital-7_mono.ttf') format("truetype");
+}
+
+#elapseClock{
+  text-align: right;
+  font-size: 18px;
+  margin-top: 10px;
+  margin-bottom: 10px
+}
+
+#elapseClock .digit{
+  font-family: digit;
+  font-size: 36px;
+}
+
+
+$n: 15; // 流星數量
+$s: 300; // star數量
+
+html,body {
+  height: 100%;
+  min-height: 100%;
+  width: 100%;
+  overflow: hidden; // 流星雨需要
+  //background-image: radial-gradient(ellipse at top , #080e21 0%,  #1b2735 95%);
+  padding: 0;
+  margin: 0;
+}
+
+$shadow: ();
+
+@for $i from 1 through $s {
+  $x: random(1920);
+  $y: random(1000);
+  $shadow: $shadow, ( $x+px $y+px #fff) !global;
+}
+
+.star {
+  width: 1px;
+  height: 1px;
+  background: transparent;
+  box-shadow: $shadow;
+}
+
+@for $i from 1 through $n {
+  $v: random(90) + 9; // left
+  $h: random(250) + 50; // top
+  $d: random(70)/10 + 3; // 秒數
+  .meteor-#{$i} {
+    position: absolute;
+    top: $h + px;
+    left: $v*1%;
+    width: 300px;
+    height: 1px;
+    transform: rotate(-45deg);
+    background-image: linear-gradient(to right, #fff, rgba(255,255,255,0));
+    animation: meteor $d+s linear  infinite;
+    &:before {
+      content: "";
+      position: absolute;
+      width: 4px;
+      height: 5px;
+      border-radius: 50%;
+      margin-top: -2px;
+      background: rgba(#fff,.7);
+      box-shadow: 0 0 15px 3px #fff;
+    }
+
+  }
+}
+
+@keyframes meteor {
+  0% {
+    opacity: 1;
+    margin-top: -300px;
+    margin-right: -300px;
+  }
+  12% {
+    opacity: 0;
+  }
+  15% {
+    margin-top: 300px;
+    margin-left: -600px;
+    opacity: 0;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+

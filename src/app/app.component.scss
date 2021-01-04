@@ -1,0 +1,36 @@
+.main {
+  color: #000;
+  text-shadow: none;
+  background-color: #faf8f4;
+  position:absolute;
+  min-height: 100%;
+  width: 100%;
+}
+
+#header {
+  height: 200px;
+  min-width: 20%;
+}
+
+.topic {
+  margin: 0 auto;
+}
+
+.ctopic {
+  margin: 0 auto;
+  display: table;
+  padding: 24px 24px;
+  font-family: inherit;
+  font-size: smaller;
+}
+
+#elapseClock {
+  display: table;
+  margin: 0 auto;
+}
+
+#footer {
+  height: 400px;
+  margin: 0 auto;
+  display: table;
+}

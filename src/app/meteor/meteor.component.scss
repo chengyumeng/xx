@@ -1,0 +1,37 @@
+.meteor {
+  height: 100%;
+  min-height: 100%;
+  width: 100%;
+  overflow: hidden; // 流星雨需要
+  background-image: radial-gradient(ellipse at top , #080e21 0%,  #1b2735 95%);
+  padding: 0;
+  margin: 0;
+}
+
+.msg {
+  margin: 0 auto;
+  display: table;
+  padding: 24px 24px;
+  font-family: inherit;
+  font-size: smaller;
+  animation: change 10s linear 0s infinite;
+}
+
+@keyframes change {
+  0% {
+    color: #333;
+  }
+  25% {
+    color: #ff0;
+  }
+  50% {
+    color: #f60;
+  }
+  75% {
+    color: #cf0;
+  }
+  100% {
+    color: #f00;
+  }
+}
+

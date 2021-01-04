@@ -1,0 +1,69 @@
+/**
+ * 那一年我二十三岁，活在自己的黄金时代，爱上了发着光的她。
+ */
+* {
+  -webkit-transition: all 1s;
+}
+
+#style-text {
+  position: absolute;
+  font-size: smaller;
+  -webkit-transform-origin: left;
+  max-height: 80.5%;
+}
+
+/**
+ * 多年以后，面对枕边的她，
+ * 我都会回想起 2014 年国庆节后那个周末里我们的邂逅，
+ * 那该是神的祝福。
+ */
+pre, a {
+  color: blue;
+  /* 如这不断变得优雅的代码，我们经历了从朴素到华丽再到"一切都是刚刚好"。*/
+}
+
+/**
+ * 如果嫁给一个程序员有什么快乐的话，被动接受代码的黑魔法，算是吧。
+ * 在过去的这些年里，我教她写过很多代码。
+ * 不过呢，可能她一个也没学会。
+ * "你会就可以了，我需要的时候你来帮我做。"
+ * 这就是"爱情"的模样。
+ */
+pre:not(:empty) {
+  max-height: 66.6%;
+  width: 30%;
+  overflow: hidden;
+  font-family: monospace;
+  padding: 10px 10px 20px;
+  box-shadow: -4px 4px 2px 0 rgba(0, 0, 0, 0);
+  white-space: pre-wrap;
+  outline: 0;
+
+}
+
+/**
+ * 有人住高楼，
+ * 有人在深沟，
+ * 有人光万丈，
+ * 有人一身锈，
+ * 世人万千种，
+ * 浮云莫去求，
+ * 斯人若彩虹，
+ * 遇上方知有。
+ */
+.comment { color: #86B;}
+.selector { color: #E69F0F; }
+.selector .property { color: #64D5EA; }
+.property { color: #64D5EA; }
+.punctuation { color: #BE84F2; }
+
+pre:not(#style-text) {
+  -webkit-transform: rotateY(10deg);
+  -webkit-transform-origin: left;
+}
+
+/**
+ * 爱一个人之前，爱惜自己每一片技能的羽毛。
+ * 爱上一个人后，但求平安顺遂，一生相伴。
+ * 愿你身边那人，永远是我。
+ */
