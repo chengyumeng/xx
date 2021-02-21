@@ -3,8 +3,6 @@
 
 这是一个使用 [Angular CLI](https://github.com/angular/angular-cli) version 8.2.2 构建的情侣/表白/纪念日的纯前端项目，你可以[在这](https://chengyumeng.github.io/xx) 永久地访问它。
 
-![xx demo](https://github.com/Chengyumeng/xx/blob/master/static/demo.png)
-
 <p align="center">
   <a href="https://chengyumeng.github.io/xx">
     <img width="400" src="https://s3.ax1x.com/2021/02/21/yorB8O.png">
