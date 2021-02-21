@@ -9,7 +9,7 @@ export const anniversaries: anniversary[] = [
     desc: '今天是我们的恋爱纪念日',
   },
   {
-    date: new Date(2017,2,14),
+    date: new Date(2017,1,14),
     desc: '宝贝儿，情人节快乐',
   },
   {

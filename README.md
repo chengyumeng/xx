@@ -1,27 +1,33 @@
-# Xx
+# XX 
+[斯人若彩虹，遇上方知有](https://chengyumeng.github.io/xx)
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 8.2.2.
+这是一个使用 [Angular CLI](https://github.com/angular/angular-cli) version 8.2.2 构建的情侣/表白/纪念日的纯前端项目，你可以[在这](https://chengyumeng.github.io/xx) 永久地访问它。
 
-## Development server
+![xx demo](https://github.com/Chengyumeng/xx/blob/master/static/demo.png)
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
+<p align="center">
+  <a href="https://chengyumeng.github.io/xx">
+    <img width="400" src="https://s3.ax1x.com/2021/02/21/yorB8O.png">
+  </a>
+</p>
 
-## Code scaffolding
+### 功能
+- 动态文案，请参照修改 [这里](https://github.com/chengyumeng/xx/blob/master/src/data/book.css)
+- 恋爱纪念日彩蛋流星雨，请参照修改 [这里](https://github.com/chengyumeng/xx/blob/master/src/data/anniversary.ts)
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+## 开发
 
-## Build
+```bash
+$ yarn install
+$ ng serve
+$ ng build # 如需打包到 docs
+$ # 其他请参见 Angular 官方文档
+```
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory. Use the `--prod` flag for a production build.
-
-## Running unit tests
-
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
-
-## Running end-to-end tests
-
-Run `ng e2e` to execute the end-to-end tests via [Protractor](http://www.protractortest.org/).
-
-## Further help
-
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI README](https://github.com/angular/angular-cli/blob/master/README.md).
+## 其他
+同款暂未开源的微信小程序，如有广泛需求考虑开源。
+<p align="center">
+  <a href="https://chengyumeng.github.io/xx">
+    <img width="400" src="https://s3.ax1x.com/2021/02/21/yos8FP.jpg">
+  </a>
+</p>
