@@ -2702,7 +2702,7 @@ WorldComponent.ɵcmp = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdefineCom
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
-module.exports = __webpack_require__(/*! /Users/zhangpenghao/code/node_workplace/xx/src/main.ts */"zUnb");
+module.exports = __webpack_require__(/*! /Users/zhangpenghao/code/ts/xx/src/main.ts */"zUnb");
 
 
 /***/ }),
@@ -3103,7 +3103,7 @@ const anniversaries = [
         desc: '今天是我们的恋爱纪念日',
     },
     {
-        date: new Date(2017, 2, 14),
+        date: new Date(2017, 1, 14),
         desc: '宝贝儿，情人节快乐',
     },
     {
