@@ -5,7 +5,7 @@
 
 <p align="center">
   <a href="https://chengyumeng.github.io/xx">
-    <img width="400" src="https://s3.ax1x.com/2021/02/21/yorB8O.png">
+    <img width="800" src="https://s3.ax1x.com/2021/02/21/yorB8O.png">
   </a>
 </p>
 
